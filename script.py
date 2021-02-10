@@ -3,7 +3,7 @@ from time import sleep
 from data import user
 from data import password
 
-class GramBot:
+class Followback:
 
     def __init__(self, username, password):
         if (username == ''):
@@ -69,5 +69,5 @@ class GramBot:
         self.driver.find_element_by_xpath("/html/body/div[4]/div/div/div[1]/div/div[2]/button").click()
         return profileNames
 
-gram_bot = GramBot(user, password)
-gram_bot.get_unfollwers()
+bot = Followback(user, password)
+bot.get_unfollwers()
